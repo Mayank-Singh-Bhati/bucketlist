@@ -1,0 +1,222 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+/* __________________________________________________________________________________ */
+
+*{
+  scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', 'Alfa Slab One', sans-serif;
+  }
+  ::-webkit-scrollbar{
+    width: 0;
+  }
+  body{
+  overflow-x: hidden;
+
+}
+.header{
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 0, 43), #000, #000);
+    min-height: 10vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-elements{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.7em 1em;
+    display: inline-block;
+}
+.logo-elements span {
+    margin-right: 0.3em;
+    font-size: 2em;
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    -webkit-box-reflect: below -18px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+    text-transform: uppercase;
+    animation: waviy 3s infinite;
+    animation-delay: calc(.2s * var(--i));
+    overflow: hidden;
+}
+.sign-in-btns{
+  width: 22vw;
+  float: right;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sign-in-btns a{
+  padding: 10px 20px;
+  color: rgb(255, 0, 43);
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .7s;
+  letter-spacing: 4px;
+  margin: auto;
+}
+.sign-in-btns a:hover{
+  background: rgb(255, 0, 43);
+  color: #CBBDDB;
+  border-radius: 5px;
+}
+.navbar{
+  min-width: 100vw;
+  height: 5vh;
+  display: flex;
+  background-color: #000;
+  justify-content: space-between;
+}
+.navitems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navitems a{
+  text-decoration: none;
+  color: #cbbddb;
+  border-right: 2px solid #CBBDDB;
+  padding: 0 2vw;
+}
+.navitems a:hover{
+  color:rgb(255, 0, 43);
+  transition: 1s;
+}
+.searchbar{
+  position: relative;
+  width: 20vw;
+  display: flex;
+  align-items:center;
+  background: rgba(203, 189, 219, 0.1);
+  border-radius: 10px;
+  padding: 2px 5px;
+  margin-right: 5px;
+  backdrop-filter: blur(4px) saturate(180%);
+}
+.searchbar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  color: #cac7ff;
+  margin: 2px;
+}
+::placeholder{
+  color: #cac7ff;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.searchbar button{
+  width: 1.5em;
+  font-size: 15px;
+  position: relative;
+  border-radius: 50%;
+  border: 0;
+  background: #58629b;
+  color: #fff;
+  cursor: pointer;
+}
+.swiper{
+  box-sizing: border-box;
+  width: 100%;
+  height: 85vh;
+}
+.swiper-wrapper{ 
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+  color:rgb(255, 0, 43);
+} 
+.swiper .swiper-pagination-bullet{
+  background: #fff;
+}
+.swiper .swiper-pagination-bullet-active{
+  background: rgb(255, 0, 43);
+}
+.footer{
+  width: 100%;
+}
+footer{
+  background: rgb(2.5, 2.5, 2.5);
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: rgb(255, 0, 43);
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+.footer-content p{
+  margin: 10px auto;
+  font-size: 1.2em;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.5rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: rgb(255, 0, 43);
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .7;
+  font-weight: 200;
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-5px)
+  }
+}

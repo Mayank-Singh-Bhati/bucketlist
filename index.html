@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUCKETLIST-Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style-index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<body>
+<!-- header - start -->
+    <section class="header">
+        <div class="logo-elements">
+            <span class="logo" style="--i:1">B</span>
+            <span class="logo" style="--i:2">U</span>
+            <span class="logo" style="--i:3">C</span>
+            <span class="logo" style="--i:4">K</span>
+            <span class="logo" style="--i:5">E</span>
+            <span class="logo" style="--i:6">T</span>
+            <span class="logo" style="--i:7">L</span>
+            <span class="logo" style="--i:8">I</span>
+            <span class="logo" style="--i:9">S</span>
+            <span class="logo" style="--i:10">T</span>
+        </div>
+        <div class="sign-in-btns">
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Log In</a>
+        </div>
+    </section>
+<!-- Header - end -->
+<!-- Navigation Bar - start -->
+    <section class="navbar">
+        <div class="navitems">
+            <a href="index.html">HOME</a>
+            <a href="#">HOTELS</a>
+            <a href="#">PLANS</a>
+            <a href="#">CONTACT</a>
+        </div>
+        <form class="searchbar" action="https://www.google.com/search" method="get">
+            <input type="text" placeholder="Explore" name="q">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </section>
+    <section class="image-slider">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/amsterdam.jpg"></div>
+      <div class="swiper-slide"><img src="images/paris.jpg"></div>
+      <div class="swiper-slide"><img src="images/mexico.jpg"></div>
+      <div class="swiper-slide"><img src="images/egypt.jpg"></div>
+      <div class="swiper-slide"><img src="images/jodhpur.jpg"></div>
+        <div class="swiper-slide"><img src="images/maldives.jpg"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+<footer>
+    <div class="footer-content">
+        <h3>BUCKET LIST</h3>
+        <p>The journey of a thousand miles begins with a single step.</p>
+        <ul class="socials">
+            <li><a href="https://instagram.com/bmayanksingh?igshid=ZDdkNTZiNTM="><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 BUCKETLIST Pvt.Ltd. designed by <span>Mayank Singh Bhati</span></p>
+    </div>
+</footer>
+
+<!-- SCRIPT - section -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay:{
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+    </script>
+</body>
+</html>
